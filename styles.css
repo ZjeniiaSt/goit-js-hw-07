@@ -1,0 +1,11 @@
+#gallery {
+  display: flex;
+}
+
+.image-card {
+  margin-right: 30px;
+}
+
+.image-card:last-child {
+  margin-right: 0;
+}
