@@ -18,6 +18,6 @@ const galleryEl = document.querySelector("#gallery");
 images.forEach((image) =>
   galleryEl.insertAdjacentHTML(
     "beforeEnd",
-    `<li class = "image-card"><img src="${image.url}" alt="${image.alt}" ></li>`
+    `<li class = "image-card"><img src="${image.url}" height="400" alt="${image.alt}" ></li>`
   )
 );
