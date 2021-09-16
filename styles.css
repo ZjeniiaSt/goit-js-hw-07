@@ -3,6 +3,7 @@
 }
 
 .image-card {
+  border-left: 3px solid darkolivegreen;
   list-style-type: none;
   margin-right: 30px;
 }
