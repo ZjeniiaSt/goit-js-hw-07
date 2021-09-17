@@ -3,9 +3,6 @@ const refs = {
   nameOutputEl: document.querySelector("#name-output"),
 };
 
-console.log(refs.nameInputEl);
-console.log(refs.nameOutputEl);
-
 refs.nameInputEl.addEventListener("input", onIputChange);
 
 function onIputChange(event) {
@@ -13,5 +10,3 @@ function onIputChange(event) {
     ? (refs.nameOutputEl.textContent = event.target.value)
     : (refs.nameOutputEl.textContent = "незнакомец");
 }
-
-console.log(refs.nameOutputEl.textContent);
