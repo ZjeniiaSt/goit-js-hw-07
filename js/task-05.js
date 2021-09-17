@@ -8,7 +8,10 @@ console.log(refs.nameOutputEl);
 
 refs.nameInputEl.addEventListener("input", onIputChange);
 
-function onIputChange() {
-  console.log(event.currentTarget.value);
-  refs.nameOutputEl.textContent = event.currentTarget.value;
+function onIputChange(event) {
+  refs.nameInputEl.value.length > 0
+    ? (refs.nameOutputEl.textContent = event.target.value)
+    : (refs.nameOutputEl.textContent = "незнакомец");
 }
+
+console.log(refs.nameOutputEl.textContent);
