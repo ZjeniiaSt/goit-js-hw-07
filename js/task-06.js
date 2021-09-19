@@ -9,10 +9,11 @@ function onIputIn(event) {
   const inputText = event.target.value;
 
   if (inputText.length === inputLength) {
-    inputId.classList.add("valid");
-    inputId.classList.remove("invalid");
-  } else {
-    inputId.classList.add("invalid");
-    inputId.classList.remove("valid");
-  }
+    addClass("valid", "invalid");
+  } else addClass("invalid", "valid");
+}
+
+function addClass(a, r) {
+  inputId.classList.add(a);
+  inputId.classList.remove(r);
 }
