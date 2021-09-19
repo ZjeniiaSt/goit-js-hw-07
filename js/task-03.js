@@ -15,7 +15,7 @@ const images = [
 
 const galleryEl = document.querySelector("#gallery");
 
-images.forEach((image) =>
+images.map((image) =>
   galleryEl.insertAdjacentHTML(
     "beforeEnd",
     `<li class = "image-card"><img src="${image.url}" height="400" alt="${image.alt}" ></li>`
