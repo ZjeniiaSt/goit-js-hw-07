@@ -15,9 +15,9 @@ const images = [
 
 const galleryEl = document.querySelector("#gallery");
 
-images.map((image) =>
-  galleryEl.insertAdjacentHTML(
-    "beforeEnd",
+let markup = images.map(
+  (image) =>
     `<li class = "image-card"><img src="${image.url}" height="400" alt="${image.alt}" ></li>`
-  )
 );
+
+galleryEl.insertAdjacentHTML("beforeEnd", markup.join(""));
